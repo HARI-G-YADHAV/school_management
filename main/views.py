@@ -3,6 +3,7 @@ from rest_framework import viewsets
 from .models import User,Subject,Mark
 from .serializers import UserSerializer,SubjectSerializer,MarkSerializer
 
+
 # Create your views here.
 
 class UserViewSet(viewsets.ModelViewSet):
@@ -16,3 +17,4 @@ class SubjectViewSet(viewsets.ModelViewSet):
 class MarkViewSet(viewsets.ModelViewSet):
     queryset = Mark.objects.all()
     serializer_class = MarkSerializer
+    
